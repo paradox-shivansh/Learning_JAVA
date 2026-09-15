@@ -1,7 +1,7 @@
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
 import java.util.Scanner;
-class Main {
+class Input {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // now sc is an object that will be used to take a appropriate input
