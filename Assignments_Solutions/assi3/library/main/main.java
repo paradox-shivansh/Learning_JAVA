@@ -23,12 +23,9 @@ public class LibraryMain {
         // Display details
         for (LibraryResource resource : resources) {
 
-            if (resource instanceof library.model.Printable) {
-                library.model.Printable printable =
-                        (library.model.Printable) resource;
+            Printable printable = (Printable) resource;
 
-                printable.printDetails();
-            }
+            printable.printDetails();
         }
 
         // Calculate total fine
