@@ -1,10 +1,23 @@
-public library.model;
+package library.model;
 
-public class DigitalResorces extends LibraryResorces implements (String title, String author){
-    super(title,author);
-}
+public class DigitalResource extends LibraryResource implements Printable {
 
-@override
-public printable(){
-    return getTitle();
+    public DigitalResource(int resourceId, String title, String author) {
+        super(resourceId, title, author);
+    }
+
+    @Override
+    public double calculateFine(int overdueDays) {
+        return overdueDays * 2;
+    }
+
+    @Override
+    public void printDetails() {
+        System.out.println("Resource ID: " + getResourceId());
+        System.out.println("Title: " + getTitle());
+        System.out.println("Author: " + getAuthor());
+        System.out.println("Type: Digital Resource");
+        System.out.println("Fine Rate: Rs. 2/day");
+        System.out.println();
+    }
 }
