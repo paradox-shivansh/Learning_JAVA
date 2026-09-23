@@ -4,12 +4,12 @@ public class Excetion_out {
 
     public static void method3() {
         System.out.println("In method3");
-        int result = 10 / 0;
     }
 
     public static void method2() {
         System.out.println("In method2");
         method3();
+        int result = 10 / 0;
     }
 
     public static void method1() {
