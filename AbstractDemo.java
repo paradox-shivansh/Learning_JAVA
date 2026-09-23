@@ -6,9 +6,15 @@ System.out.println("This is a concrete method.");
    }
 }
 
-class B extends A {
+interface D{
+    int y=101;
+}
+
+class B extends A implements D {
 void callme() {
 System.out.println("B's implementation of callme.");
+// D.y=100;
+System.out.println(D.y);
 }
 }
 
