@@ -24,7 +24,7 @@ class nested_class {
 
         obj.display();
 
-        A.B obj1 = obj.new B();
+       A.B obj1 = obj.new B();
 
         obj1.calc();
     }
